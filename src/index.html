@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в пары</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./scripts/bundle.js"></script>
+  </head>
+
+  <body>
+    <form class="game-settings" id="game-settings">
+      <div class="row">
+        <label class="label" for="input-size">Количество карточек:</label>
+        <input class="input" type="number" id="input-size" min="2" max="4"
+          value="4">
+      </div>
+      <div class="row">
+        <label class="label">Тип карточек:</label>
+
+        <input class="input" type="radio" id="number" name="contact" сhecked>
+        <label for="number">Числа</label>
+        <input class="input" type="radio" id="images" name="contact">
+        <label for="images">Картинки</label>
+      </div>
+      <div class="row">
+        <button class="button" id="start" type="submit">Начать игру</button>
+      </div>
+    </form>
+    <div class="timer" id="timer">
+      60
+    </div>
+    <div class="container hidden" id="container"> </div>
+  </body>
+
+</html>
